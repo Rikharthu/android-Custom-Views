@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.uberv.customviews.MainActivity">
+
+    <com.example.uberv.customviews.CascadeLayout
+        android:layout_width="match_parent"
+        custom:horizontal_spacing="30dp"
+        custom:vertical_spacing="30dp"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="#FF0000"/>
+
+        <View
+            custom:layout_vertical_spacing="60dp"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="#00FF00"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="#0000FF"/>
+        <com.example.uberv.customviews.BullsEyeView
+            android:layout_width="100dp"
+            android:layout_height="150dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:textColor="#000"
+            android:text="Hallo"/>
+    </com.example.uberv.customviews.CascadeLayout>
+
+</android.support.constraint.ConstraintLayout>
